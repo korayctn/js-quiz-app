@@ -80,7 +80,7 @@ body {
     
 }
 #question-text:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: all 0.3s ease;
 }
 
@@ -102,7 +102,6 @@ body {
     width: 39%;
     height: auto;
     border: 2px solid black;
-    background-color: rgb(173, 173, 200);
     display: flex;
     overflow: auto;
     color: white;
@@ -126,47 +125,65 @@ body {
     margin-bottom: 7.5px;
     padding: 10px;
     border-radius: 4px;
+    font-weight: bold;
+    color: whitesmoke ;
 }
 
 .answer-selected {
     border: 4px solid black;
 }
 
-#A {
+#a {
     background-color: #ed822a;
 }
 
-#A:hover {
+#a:hover {
     cursor: pointer;
 }
 
-#B {
+#b {
     background-color: #42ee04;
 }
 
-#B:hover {
+#b:hover {
     cursor: pointer;
 }
 
-#C {
+#c {
     background-color: #c90040;
 }
 
-#C:hover {
+#c:hover {
     cursor: pointer;
 }
 
-#D {
+#d {
     background-color: #0c00f7;
 }
 
-#D:hover {
+#d:hover {
     cursor: pointer;
 }
+.button-part{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.button-part #button-container{
+    width: 41%;
+    display: flex;
+    justify-content: end;
+}
+
 .fa-check{
     font-size: 32px;
     cursor: pointer;
-    position: relative;
-    top: 2px;
-    left: 5px;
+    margin-top: 7px;
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}
+.fa-brands{
+    color: black;
 }
